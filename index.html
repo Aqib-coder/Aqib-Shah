@@ -219,28 +219,22 @@
       </section>
         
 
-        <!-- <div class="contact-form container" id="contact">
+        <div class="contact-form container" id="contact">
           <h1>Contact</h1>
           <div class="main-div">
             <div class="right contact-right">
-              <img src="../images/background.jpg" alt="" />
+              <!-- <img src="../images/background.jpg" alt="" /> -->
             </div>
 
             <div class="left contact-left">
               <form method="post">
-                {% csrf_token %}
+                
                 <p>
                   Contact me throught social media or you can directly submit
                   the given form correctly. This is also way to contact me, I
                   will repond you through email.
                 </p>
-                {% if error %}
-                <div
-                  class="p-3 text-primary-emphasis bg-danger-subtle border border-primary-subtle rounded-3"
-                >
-                  Please Enter required fields
-                </div>
-                {% endif %}
+                
 
                 <h5>Name:</h5>
                 <input type="text" placeholder="Enter Name" name="c_name" />
@@ -255,21 +249,15 @@
 
                 <input type="email" placeholder="Enter Email" name="c_email" />
                 <h5>Domain:</h5>
+                <input type="text" placeholder="Enter Work Domain" name="c_domain" />
 
-                <select name="work" id="">
-                  <option value="" selected>Select Domain for work</option>
-                  {% for service in services %}
-                  <option value="{{service.service_title}}">
-                    {{service.service_title}}
-                  </option>
-                  {% endfor %}
-                </select>
+                
 
                 <button class="submit" type="submit">Submit</button>
               </form>
             </div>
           </div>
-        </div> -->
+        </div>
       </main>
     </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
