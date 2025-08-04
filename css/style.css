@@ -459,6 +459,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
     position: relative;
     width: 100%
+    
 }
 
 .carousel-nav button
@@ -491,13 +492,6 @@ body {
     margin-top: 20px
 }
 
-.about-company .container,
-.footer-container {
-    /* max-width: 1200px; */
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 
 .carousel-nav button {
     border: none;
